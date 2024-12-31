@@ -1,0 +1,433 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*-- ESTILO DEl header --*/
+header{
+    padding: 5px;
+    text-align: center;
+    
+}
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cadetblue;
+}
+.header-content{
+    display: flex;
+    padding: 15px;
+
+}
+.logo h2{
+    color: blue;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+    padding: 0;
+    width: 100%;
+}
+nav li{
+    margin: 0 20px;
+
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+/*-- ESTILO DEl header --*/
+header{
+    padding: 5px;
+    text-align: center;
+    
+    
+}
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cadetblue;
+}
+.header-content{
+    display: flex;
+    padding: 15px;
+
+}
+.logo h2{
+    color: blue;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+    padding: 0;
+    width: 100%;
+}
+nav li{
+    margin: 0 20px;
+
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*-- ESTILO DE LA SECCION section-wrapper --*/
+
+
+
+
+
+
+/*-- Contenido de la seccion --*/
+
+
+
+/*---- ESTILO DEL FOOTER-*/
+footer{
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.footerContainer{
+    width: 100%;
+    padding: 3px 2px 1px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+
+}
+/* hower effect on social Media Icons*/
+.socialIcons a:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerBotton{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footerBotton p{
+    color: white;
+}
+
+
+/*-- RESPONSABILIDAD*/
+@media screen and (max-width:768px) {
+.wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.nav-footer ul{
+    display: flex;
+    flex-direction: column;
+
+}
+.nav-footer ul li{
+    margin: 5px;
+}
+}
+
+
+/* INDEX.HTML*/
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+.img {
+    top: 15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    animation: slide 20s infinite;
+    opacity: 0;
+}
+
+@keyframes slide {
+    10% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
+}
+
+img:nth-child(0) {
+    animation-delay: 0s;
+}
+
+img:nth-child(1) {
+    animation-delay: 5s;
+}
+
+img:nth-child(2) {
+    animation-delay: 10s;
+}
+
+img:nth-child(3) {
+    animation-delay: 15s;
+}
+
+/* SOBRE.HTML*/
+.texto{
+    margin-top: -45px;
+    margin-right: 45px;
+    margin-left: 30px;
+    
+}
+.texto h1{
+    text-align: center;
+    top: 5px;
+
+}
+.texto h2{
+    margin-top: 4px;
+    text-align: left;
+}
+
+.texto p{
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+
+
+
+
+
+
+/* PRODUCTO.HTML*/
+
+
+
+.img-galeria {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-galeria img {
+    width: 300px;
+    height: 150px;
+    cursor: pointer;
+    padding: 15px;
+   
+}
+
+.img-galeria img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.full-img {
+   width: 300px;
+   height: 200px;
+   background: rgba(0, 0, 0, 0.9);
+   
+   
+   
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+/* PRESUPUESTO*/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.principal {
+    width: 430px;
+
+    background: yellowgreen;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.principal h3 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+.principal h3::before {
+    content:"" ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    background: brown;
+    border-radius: 12px;
+    height: 3px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+form .espacio {
+    height: 45px;
+    margin: 10px;
+}
+
+.espacio input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    outline: none;
+    font-size: 17px;
+    padding: 0 17px;
+    border-radius: 8px;
+    font-weight: 400;
+    transition: all300ms ease;
+}
+.privacy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+.btn{
+    width: 100%;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.btn:hover{
+    background: linear-gradient(to right top, yellowgreen, blue, white);
+
+}
+
+
+
+/* CONTACTO*/
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    color: black;
+}
+
+.box {
+    max-width: 600px;
+}
+
+h3 {
+    font-size: 5em;
+}
+
+iframe {
+    height: 400px;
+    width: 500px;
+    transition: 0.3s ease-in-out;
+    font-size: 100%;
+    margin-top: 5%;
+}
+
+iframe:hover {
+    transform: scale(1.1);
+
+}
